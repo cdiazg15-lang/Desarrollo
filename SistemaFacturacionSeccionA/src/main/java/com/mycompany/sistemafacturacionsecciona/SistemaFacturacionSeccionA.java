@@ -126,16 +126,10 @@ public class SistemaFacturacionSeccionA {
     // AGREGAR DETALLE
     // ==========================================
 
-    factura1.agregarDetalle(detalle1);
+    factura1.CrearFacturaDetalle(detalle1);
 
 
-    // ==========================================
-    // MOSTRAR FACTURA
-    // ==========================================
-
-    System.out.println("\n");
-    factura1.mostrarFactura();
-
+  
     entrada.close();
 }
 }
