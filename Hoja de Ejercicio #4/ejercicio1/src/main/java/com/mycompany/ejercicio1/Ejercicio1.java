@@ -1,16 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.ejercicio1;
 
-/**
- *
- * @author diazc
- */
+import java.util.Scanner;
+
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner teclado = new Scanner (System.in);
+        
+        String elemento;
+        
+        //Crea ciclo que se repite indefinidamente
+        while (true) {
+
+            System.out.print("Ingrese un elemento: ");
+            elemento = teclado.nextLine();
+
+            if (elemento.equalsIgnoreCase("fin")) { //Pregunta si usuario escribio fin
+                break; //Rompe el ciclo
+            }
+
+            System.out.println("Ingresaste: " + elemento);
+        }
+
+        System.out.println("Programa terminado.");
     }
 }
+    
+
