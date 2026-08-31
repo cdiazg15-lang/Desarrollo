@@ -40,7 +40,7 @@ public class Ejercicio4 {
 
                     System.out.println("\nElementos:");
 
-                    for (int i = 0; i < elementos.size(); i++) {
+                    for (int i = 1; i < elementos.size(); i++) {
                         System.out.println(i + ": " + elementos.get(i));
                     }
 
@@ -51,7 +51,7 @@ public class Ejercicio4 {
                     System.out.print("Ingrese el índice que desea eliminar: ");
                     int indice = teclado.nextInt();
 
-                    if (indice >= 0 && indice < elementos.size()) {
+                    if (indice >= 1 && indice < elementos.size()) {
 
                         elementos.remove(indice);  //elimina por indice
 
